@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "View_enquiry";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method= "post" action="@Url.Action("NewUser", "enquiry")">
+      <label for="fname">FirstName</label>
+    <input type="text" id="fname" name= "fname" /><br />
+    <label for=" lname">LastName</label>
+<input type="text" id="lname" name= "lname" /><br />
+    <label for="city">City</label>
+    <input type="text" id="city" name= "city" /><br />
+    <label for="gndr">Gender</label>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name= "gender" value="male" />
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender1" value="female" /><br />
+    <label for="psw">Password</label>
+    <input type="text" id="psw" name= "psw" /><br />
+    <label for="cnfpsw">Confirm Password</label>
+<input type="text" id="cnfpsw" name="cnfpsw" /><br />
+    <input type="Submit" value="SignUp" />
+
+</form>
+
